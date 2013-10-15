@@ -1,4 +1,4 @@
-local GPG_ENV=$HOME/.gnupg/gpg-agent.env
+local GPG_ENV=/home/hana/.gnupg/gpg-agent-info-kaos
 
 function start_agent_nossh {
     eval $(/usr/bin/env gpg-agent --quiet --daemon --write-env-file ${GPG_ENV} 2> /dev/null)
